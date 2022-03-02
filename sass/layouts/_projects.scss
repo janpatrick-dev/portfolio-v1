@@ -1,0 +1,22 @@
+.projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.5rem;
+
+  @media (max-width: 1200px) {
+    grid-template-columns: 1fr;
+  }
+
+  &__skill-item {
+    display: inline-block;
+    padding: .5rem;
+    gap: 1rem;
+    background-color: var(--color-secondary);
+    border-radius: 3px;
+    color: var(--color-primary);
+
+    &:not(:last-child) {
+      margin-right: .5rem;
+    }
+  }
+}
